@@ -18,7 +18,7 @@ func zeroCrossingRate(for buffer: FloatBuffer) -> Float {
   return result
 }
 
-func test(iterations: Int = 1_000_000) {
+func test(iterations: Int = 10_000_000) {
   var result: Float = 0
   for _ in 0..<iterations {
     result = zeroCrossingRate(for: testBuffer)

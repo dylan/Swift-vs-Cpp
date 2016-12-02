@@ -27,7 +27,7 @@ float zeroCrossingRate(std::vector<float> buffer) {
   return zcr;
 }
 
-void test(int iterations = 1000000) {
+void test(int iterations = 10000000) {
   float result = 0.0;
   for (size_t i = 0; i < iterations; i++) {
     result = zeroCrossingRate(testBuffer);
